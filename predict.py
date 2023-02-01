@@ -8,8 +8,7 @@ weight = 0.12
 model = load_model(model_resource)
 
 def predict(body_mass_grams, brain_mass_grams):
-    # pred_brain_mass_grams = weight * (body_mass_grams**(2/3))
-    pred_brain_mass_grams = model.predict([body_mass_grams])
+    pred_brain_mass_grams = weight * (body_mass_grams**(2/3))
     eq = brain_mass_grams / pred_brain_mass_grams
     
     print("body mass (g): ", body_mass_grams)
