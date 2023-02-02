@@ -1,5 +1,5 @@
 venv/
-2x100-hidden-layers-model/
+models/
 .DS_Store
 __pycache__/
 BrainAllometry_Supplement_Data.csv
